@@ -2,15 +2,48 @@
 
 /* Style */
 
+/* Navbar ========================================================================== */
+nav {
+  background-color: #333; /* Define a cor de fundo da navbar */
+  overflow: hidden; /* Evita que o conteúdo ultrapasse os limites da navbar */
+  
+}
+
+nav ul {
+  list-style: none; /* Remove os marcadores das listas */
+  padding: 0; /* Remove o padding padrão */
+  margin: 0; /* Remove a margem padrão */
+  display: flex; /* Usa Flexbox para alinhamento dos itens */
+  justify-content: center;
+  
+}
+
+
+
+nav ul li a {
+  display: block; /* Faz com que o link ocupe o bloco inteiro */
+  text-align: center; /* Alinha o texto no centro */
+  padding: 0 20px; /* Espaçamento interno */
+  text-decoration: none; /* Remove o sublinhado dos links */
+  
+}
+
+/* Mobile Responsivo */
+@media screen and (max-width: 768px) {
+  nav ul {
+      flex-direction: column; /* Empilha os itens na vertical */
+  }
+}
+
 body {
   font-size: 15px;
   font-family: Arial, Arial, Helvetica, sans-serif;
   line-height: 1.5;
-  background: #D1D1D1;
+  background: #201c1c;
 }
 
 a {
-  color: #63a52a;
+  color: gold;
   text-decoration: none;
   transition: opacity ease-in-out 0.3s;
   -webkit-transition: opacity ease-in-out 0.3s;  /* Safari <=6.1, Android <= 4.3 */
@@ -18,7 +51,7 @@ a {
 
 a:hover {
   text-decoration: underline;
-  color: #90D355;
+  color: rgb(0, 152, 253);
 }
 
 code, pre {
@@ -32,6 +65,7 @@ h1.title {
   font-style: italic;
   font-family:Georgia, serif;
   text-align: center;
+  color: #fafbfc;
 }
 
 .wrapper {
@@ -41,20 +75,20 @@ h1.title {
 
 #container {
   border: 1px solid #2a2a2a;
-  background: #ddd url(../images/pattern.png);
+  background: #fafbfc url(../images/pattern.png);
   box-shadow: 0 0 5px #b1b1b1;
 }
 
 p.tagline {
   padding: 20px 20px 0;
-  color: #fff;
+  color: #fafbfc;
   font-size: 17px;
 }
 
 #main {
   margin-top: 20px;
   padding: 0 20px 90px;
-  background-color: #fff;
+  background-color: #1f1d1d;
 }
 
 .download-bar {
@@ -295,11 +329,13 @@ footer .owner img {
 
 footer .owner p {
   font-family:Georgia, serif;
+  color: #fafbfc;
 }
 
 footer .owner p a {
   font-size: 16px;
   font-style: italic;
+  
 }
 
 /* Markdown */
@@ -326,6 +362,10 @@ footer .owner p a {
 .markdown-body h5,
 .markdown-body h6 {
   font-weight: bold;
+}
+
+.markdown-body p {
+  color: #fafbfc;
 }
 
 .markdown-body h1 {
@@ -392,6 +432,7 @@ footer .owner p a {
 .markdown-body dd,
 .markdown-body dd p {
   margin-bottom: 10px;
+  
 }
 
 .markdown-body li pre,

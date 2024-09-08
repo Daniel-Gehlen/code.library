@@ -1,55 +1,87 @@
 <!doctype html>
 <!-- The Time Machine GitHub pages theme was designed and developed by Jon Rohan, on Feb 7, 2012. -->
 <!-- Follow him for fun. http://twitter.com/jonrohan. Tail his code on https://github.com/jonrohan -->
-<html lang="{{ site.lang | default: "en-US" }}">
+<html lang="en-US">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
-  <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+  <link rel="stylesheet" href="/assets/css/style.css">
   <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-  <script src="{{ '/assets/js/script.js' | relative_url }}"></script>
+  <script src="/assets/js/script.js"></script>
 
-{% seo %}
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+  <title>Code Library - Daniel Gehlen</title>
+  <meta name="generator" content="Jekyll v3.10.0" />
+  <meta property="og:title" content="Code Library - Daniel Gehlen" />
+  <meta property="og:locale" content="en_US" />
+  <meta name="description" content="Code Library by Daniel Gehlen - A repository of coding resources and documentation." />
+  <meta property="og:description" content="Code Library by Daniel Gehlen - A repository of coding resources and documentation." />
+  <link rel="canonical" href="http://localhost:4000/" />
+  <meta property="og:url" content="http://localhost:4000/" />
+  <meta property="og:site_name" content="Code Library" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary" />
+  <meta property="twitter:title" content="Code Library - Daniel Gehlen" />
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebSite","description":"Code Library by Daniel Gehlen - A repository of coding resources and documentation.","headline":"Code Library - Daniel Gehlen","name":"Code Library","url":"http://localhost:4000/"}
+  </script>
+  <!-- End Jekyll SEO tag -->
 
-  {% include head-custom.html %}
+  <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+  <!-- Setup Google Analytics -->
+
+  <!-- You can set your favicon here -->
+  <!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
+
+  <!-- end custom head snippets -->
+
 </head>
 
 <body>
 
   <div class="wrapper">
     <header>
-      <h1 class="title">{{ site.title | default: site.github.repository_name }}</h1>
+      <h1 class="title">Code Library</h1>
     </header>
     <div id="container">
-      <p class="tagline">{{ site.description | default: site.github.project_tagline }}</p>
+      <p class="tagline">Developer Daniel Gehlen</p>
       <div id="main" role="main">
+        
         <div class="download-bar">
         <div class="inner">
-          {% if site.show_downloads %}
-          <a href="{{ site.github.tar_url }}" class="download-button tar"><span>Download</span></a>
-          <a href="{{ site.github.zip_url }}" class="download-button zip"><span>Download</span></a>
-          {% endif %}
-          <a href="{{ site.github.repository_url }}" class="code">View {{ site.title | default: site.github.repository_name }} on GitHub</a>
+
+          <nav>
+            <ul>
+              <li><a href="#home" class="code">Home</a></li>
+              <li><a href="#Docs" class="code">Docs</a></li>
+              <li><a href="#Resources" class="code">Resources</a></li>
+              <li><a href="#Showcase" class="code">Showcase</a></li>
+              <li><a href="#News" class="code">News</a></li>
+            </ul>
+          </nav>
+          
+          <a href="" class="download-button tar"><span>Download</span></a>
+          <a href="" class="download-button zip"><span>Download</span></a>
+
+          <a href="https://github.com/Daniel-Gehlen" class="code">View My Repositories on GitHub</a>
+
         </div>
         <span class="blc"></span><span class="trc"></span>
-        </div>
+        </div>     
+
         <article class="markdown-body">
-          {{ content }}
+          <p>Welcome to my Code Library! Here you can find resources, documentation, and more.</p>
+          <p>Feel free to explore and check out my repositories on <a href="https://github.com/Daniel-Gehlen">GitHub</a>.</p>
+          <p>For any questions or suggestions, you can <a href="mailto:daniel.gehlen@example.com">email me</a>.</p>
         </article>
       </div>
     </div>
     <footer>
       <div class="owner">
-      {% if site.github.is_project_page %}
-      <p><a href="{{ site.github.owner_url }}" class="avatar"><img src="{{ site.github.owner_gravatar_url }}" width="48" height="48"></a> <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a> maintains <a href="{{ site.github.repository_url }}">{{ site.title | default: site.github.repository_name }}</a></p>
-      {% endif %}
-
-       {% if site.github.is_user_page %}
-      <p><a href="{{ site.github.owner_url }}" class="avatar"><img src="{{ site.github.owner_gravatar_url }}" width="48" height="48"></a>View <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a> on <a href="https://www.github.com">GitHub</a></p>
-      {% endif %}
-
+        <p><a href="https://github.com/Daniel-Gehlen" class="avatar"><img src="https://github.com/Daniel-Gehlen.png" width="48" height="48"></a> <a href="https://github.com/Daniel-Gehlen">Daniel Gehlen</a> maintains <a href="https://github.com/Daniel-Gehlen/developer.codeLibrary">Code Library</a></p>
       </div>
       <div class="creds">
         <small>This page generated using <a href="https://pages.github.com/">GitHub Pages</a><br>theme by <a href="https://twitter.com/jonrohan/">Jon Rohan</a></small>
@@ -58,12 +90,9 @@
   </div>
   <div class="current-section">
     <a href="#top">Scroll to top</a>
-    {% if site.show_downloads %}
-    <a href="{{ site.github.tar_url }}" class="tar">tar</a>
-    <a href="{{ site.github.zip_url }}" class="zip">zip</a>
-    <a href="{{ site.github.repository_url }}" class="code">source code</a>
-    {% endif %}
-    <p class="name"></p>
+    <a href="https://github.com/Daniel-Gehlen/developer.codeLibrary/tarball/gh-pages" class="tar">tar</a>
+    <a href="https://github.com/Daniel-Gehlen/developer.codeLibrary/zipball/gh-pages" class="zip">zip</a>
+    <a href="https://github.com/Daniel-Gehlen/developer.codeLibrary" class="code">source code</a>
   </div>
 </body>
 </html>
