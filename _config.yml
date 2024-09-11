@@ -3,3 +3,8 @@ description: Time Machine is a theme for GitHub Pages.
 show_downloads: true
 google_analytics:
 theme: jekyll-theme-time-machine
+
+collections:
+  docs:
+    output: true
+    permalink: /:collection/:name/
