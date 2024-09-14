@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+
+  <div class="wrapper">
+    <header>
+      <h1 class="title">Code Library</h1>
+    </header>
+    <div id="container">
+      <p class="tagline">Developer Daniel Gehlen</p>
+      <div id="main" role="main">
+        
+        <div class="download-bar">
+        <div class="inner">
+
+          <nav>
+            <ul>
+              <li><a href="/home/" class="code">Home</a></li>
+              <li><a href="/docs/" class="code">Docs</a></li>
+              <li><a href="/resources/" class="code">Resources</a></li>
+              <li><a href="/showcase/" class="code">Showcase</a></li>
+              <li><a href="/news/" class="code">News</a></li>
+            </ul>
+          </nav>
+
+          <a href="" class="download-button tar"><span>Download</span></a>
+          <a href="" class="download-button zip"><span>Download</span></a>
+
+          <a href="https://github.com/Daniel-Gehlen" class="code">View My Repositories on GitHub</a>
+
+        </div>
+        <span class="blc"></span><span class="trc"></span>
+        </div>     
+
+        <main>
+            <article class="markdown-body">
+              <h1>{{ page.title }}</h1>
+              <p>{{ page.date | date: "%d/%m/%Y" }}</p>
+              {{ content }}
+            </article>
+          </main>
+      </div>
+    </div>
+    <footer>
+      <div class="owner">
+        <p><a href="https://github.com/Daniel-Gehlen" class="avatar"><img src="https://github.com/Daniel-Gehlen.png" width="48" height="48"></a> <a href="https://github.com/Daniel-Gehlen">Daniel Gehlen</a> maintains <a href="https://github.com/Daniel-Gehlen/developer.codeLibrary">Code Library</a></p>
+      </div>
+      <div class="creds">
+        <small>This page generated using <a href="https://pages.github.com/">GitHub Pages</a><br>theme by <a href="https://twitter.com/jonrohan/">Jon Rohan</a></small>
+      </div>
+    </footer>
+  </div>
+  <div class="current-section">
+    <a href="#top">Scroll to top</a>
+    <a href="https://github.com/Daniel-Gehlen/developer.codeLibrary/tarball/gh-pages" class="tar">tar</a>
+    <a href="https://github.com/Daniel-Gehlen/developer.codeLibrary/zipball/gh-pages" class="zip">zip</a>
+    <a href="https://github.com/Daniel-Gehlen/developer.codeLibrary" class="code">source code</a>
+  </div>
+</body>
+</html>

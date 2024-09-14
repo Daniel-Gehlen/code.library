@@ -2,4 +2,8 @@
 
 source "https://rubygems.org"
 
+gem 'jekyll-paginate'
+
+gem 'csv'
+
 gemspec

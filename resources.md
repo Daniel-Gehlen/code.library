@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: resources
 title: Resources
 permalink: /resources/
+category: resources
 ---
-## Documentation Page
+## Resources Page
 Content for the Resources page goes here.

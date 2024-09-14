@@ -77,6 +77,27 @@
           <p>Feel free to explore and check out my repositories on <a href="https://github.com/Daniel-Gehlen">GitHub</a>.</p>
           <p>For any questions or suggestions, you can <a href="mailto:daniel.gehlen@example.com">email me</a>.</p>
         </article>
+
+        <h1>Últimos Posts</h1>
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%d/%m/%Y" }}
+    </li>
+  {% endfor %}
+</ul>
+
+        
+        <div class="pagination">
+          {% if paginator.previous_page %}
+            <a href="{{ paginator.previous_page_path }}" class="prev">Anterior</a>
+          {% endif %}
+          {% if paginator.next_page %}
+            <a href="{{ paginator.next_page_path }}" class="next">Próxima</a>
+          {% endif %}
+        </div>
+        
       </div>
     </div>
     <footer>

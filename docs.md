@@ -3,10 +3,10 @@ layout: docs
 title: Documentation
 permalink: /docs/
 ---
-<h2>Documentation</h2>
+<h1>Documentations</h1>
 
 <div class="docs-sidebar">
-  <h3>All Documents</h3>
+  <h2>All Documents</h2>
   <ul>
     {% assign sorted_docs = site.docs | sort: 'title' %}
     {% for doc in sorted_docs %}
